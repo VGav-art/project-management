@@ -1,0 +1,360 @@
+/* employee.css */
+
+.task-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Times New Roman';
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #17191b;
+  outline: none;
+}
+
+.add-task-button {
+  background-color: #007bff; 
+  color: white;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  border-radius: 25px; 
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+.add-task-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.text-success {
+  color: #28a745;
+  text-align: center;
+}
+
+.text-danger {
+  color: #dc3545;
+  text-align: center;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #171718;
+  color: white;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.task-table tr:hover {
+  background-color: #e9ecef;
+}
+/* Hover effect for task rows */
+.task-row-hover {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.task-row-hover:hover {
+  filter: brightness(0.95); /* Slightly darken row on hover */
+}
+.btn-outline-info:hover {
+  background-color: #17a2b8; /* Bootstrap info color */
+  color: #fff;
+  border-color: #17a2b8;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: #fff;
+  border-color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  filter: brightness(1.1);
+  transition: all 0.2s ease;
+}
+/* Edit/Delete button hover effects */
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: #fff;
+  border-color: #17a2b8;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  filter: brightness(1.1);
+  transition: all 0.2s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Pagination buttons */
+.btn-outline-primary:hover {
+  background-color: purple;
+  color: #fff;
+  border-color: purple;
+  transition: all 0.3s ease;
+}
+/* Container */
+.table-container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Modern table */
+.modern-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+
+.modern-table th {
+  background: #f6f8fa;
+  color: #333;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.modern-table td {
+   padding: 6px 8px;   /* reduce padding */
+  font-size: 0.9rem;  /* slightly smaller text */
+  vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modern-table tbody tr:hover {
+  background: #f9f9ff;
+  transition: background 0.2s ease-in-out;
+}
+/* Disable hover for editing rows */
+.modern-table tbody tr.editing:hover,
+.task-table tr.editing:hover {
+  background: inherit !important; /* keep original background */
+  cursor: default;
+  filter: none;
+}
+
+/* Apply hover only to non-editing rows */
+.modern-table tbody tr:not(.editing):hover,
+.task-table tr:not(.editing):hover {
+  background-color: #f0f0f0; /* or #e9ecef */
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+/* Status badges */
+.status-badge {
+  padding: 1px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.done {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.incomplete {
+  background: #fff3cd;
+  color: #6f42c1;
+}
+
+/* Pagination modern */
+.pagination-modern .page-link {
+  border-radius: 50px !important;
+  margin: 0 4px;
+  padding: 6px 14px;
+  color: purple;
+  border: 1px solid #ddd;
+  transition: all 0.2s;
+}
+
+.pagination-modern .page-item.active .page-link {
+  background: purple;
+  color: #fff;
+  border: none;
+}
+
+.pagination-modern .page-link:hover {
+  background: purple;
+}
+.task-description a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.task-description a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.task-description img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+/* Rich text in task modal */
+.task-description img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.task-description a {
+  color: #6f42c1;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.task-description a:hover {
+  color: #8a2be2;
+}
+
+/* Cursor pointer for clickable table cell */
+.clickable-description {
+  cursor: pointer;
+}
+.list-group-item.active {
+  background-color: #6f42c1 !important;
+  border-color: #6f42c1 !important;
+  color: #fff !important;
+}
+.list-group-item.active:hover {
+  background-color: #9b6ddf !important; /* lighter purple */
+  border-color: #6f42c1 !important;
+}
+/* Make images inside description responsive */
+.task-description img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+/* Style links */
+.task-description a {
+  color: #9b6ddf;
+  text-decoration: underline;
+}
+
+.task-description a:hover {
+  color: #6f42c1;
+  text-decoration: none;
+}
+
+/* Compact page size selector */
+.form-select.w-auto {
+  min-width: 70px;
+  font-size: 0.85rem;
+  padding: 4px 6px;
+}
+
+
+
+
+/* Make the entire table area scrollable */
+.task-table-wrapper {
+  max-height: 70vh; /* adjust to fit your layout */
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Sticky toolbar at the top */
+.task-toolbar {
+  position: sticky;
+  top: 0;
+  background: #fff; /* same as container background */
+  z-index: 20;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Sticky table headers */
+.table-container thead th {
+  position: sticky;
+  top: 5px; /* height of toolbar */
+  background: #f8f9fa; /* table header background */
+  z-index: 10;
+  text-align: left;
+}
+
+.sticky-top-cards {
+  position: sticky;
+  top: 0; /* distance from the top of viewport */
+  z-index: 999; /* keep it above other content */
+  background-color: #f8f9fa; /* match container background */
+  padding-top: 20px; /* optional spacing */
+  padding-bottom: 10px; 
+}
+
+
+
+

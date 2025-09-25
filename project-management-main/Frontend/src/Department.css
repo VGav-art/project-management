@@ -1,0 +1,250 @@
+/* Overall container styles */
+.department-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Times New Roman';
+  }
+  
+  /* Message styles */
+  .text-success {
+    color: #28a745;
+    text-align: center;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+    text-align: center;
+  }
+  
+  /* Add department section styles */
+  .add-department {
+    margin-bottom: 20px;
+  }
+  
+  .add-department input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+  }
+  
+  .add-department input:focus {
+    border-color: #17191b;
+    outline: none;
+  }
+  
+  .add-department button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .add-department button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styles */
+  .department-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .department-table th,
+  .department-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .department-table th {
+    background-color: #171718;
+    color: white;
+  }
+  
+  .department-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .department-table tr:hover {
+    background-color: #e9ecef;
+  }
+  .spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Employee scroll container */
+.employee-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 5px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #6f42c1 transparent;
+}
+
+/* Chrome, Edge, Safari custom scrollbar */
+.employee-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.employee-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.employee-scroll-container::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.employee-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Employee card */
+.employee-card {
+  flex: 0 0 auto;
+  width: 140px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  padding: 12px;
+  text-align: center;
+  cursor: default;
+  transition: transform 0.3s, box-shadow 0.3s;
+  scroll-snap-align: start;
+}
+
+.employee-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Avatar */
+.employee-avatar {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Name */
+.employee-card h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Phone */
+.employee-card p {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+/* Badge */
+.employee-badge {
+  font-size: 0.7rem;
+  background-color: #e9ecef;
+  color: #333;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+/* Department container */
+.department-card {
+  background: #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.department-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Scrollable employee container */
+.employee-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  gap: 15px;
+}
+
+/* Employee card */
+.employee-card {
+  background: #fff;
+  flex: 0 0 20px;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+ 
+}
+.employee-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Avatar circle */
+.employee-avatar {
+  width: 50px;
+  height: 50px;
+  background: #6f42c1;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 auto 10px auto;
+  font-size: 1.2rem;
+}
+
+/* Department badge */
+.employee-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.btn-gradient {
+  background: linear-gradient(90deg,#6f42c1,#6f42c1);
+  color: #fff;
+  border: none;
+}
+.btn-gradient:hover {
+  opacity: 0.85;
+}
+

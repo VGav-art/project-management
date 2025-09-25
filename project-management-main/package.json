@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dompurify": "^3.2.6",
+    "dotenv": "^16.4.5",
+    "mysql2": "^3.11.3",
+    "react-quill": "^2.0.0",
+    "react-scripts": "^5.0.1"
+  }
+}

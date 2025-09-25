@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04f9f5df.css",
+    "main.js": "/static/js/main.b4a34d85.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/lociafrica_limited_cover.jpg": "/static/media/lociafrica_limited_cover.58ffe17d1701602e6bf1.jpg",
+    "index.html": "/index.html",
+    "main.04f9f5df.css.map": "/static/css/main.04f9f5df.css.map",
+    "main.b4a34d85.js.map": "/static/js/main.b4a34d85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04f9f5df.css",
+    "static/js/main.b4a34d85.js"
+  ]
+}

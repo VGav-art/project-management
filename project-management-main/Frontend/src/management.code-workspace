@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "react-management",
+			"path": "../react-management"
+		}
+	],
+	"settings": {}
+}

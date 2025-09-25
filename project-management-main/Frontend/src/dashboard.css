@@ -1,0 +1,56 @@
+/* Add this to your CSS file */
+@media (max-width: 768px) {
+  .dashboard-container {
+    transform: scale(0.8); /* Scale down more for smaller devices */
+  }
+}
+/* Sidebar link hover invert */
+.sidebar-link {
+  color: purple !important;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar-link:hover {
+  background-color: #9b59b6; /* lighter purple on hover */
+  color: purple !important;
+}
+.btn-primary {
+  background-color: #6f42c1 !important;  /* Purple */
+  border-color: #6f42c1 !important;      /* Purple border */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #8a2be2 !important;  /* Slightly lighter purple on hover */
+  border-color: #8a2be2 !important;
+}
+/* Primary color overrides */
+.btn-primary,
+.bg-primary {
+  background-color: #6f42c1 !important; /* Purple */
+  border-color: #6f42c1 !important;
+}
+
+.btn-primary:hover,
+.bg-primary:hover,
+.btn-primary:focus,
+.bg-primary:focus {
+  background-color: #8a2be2 !important; /* Slightly lighter purple on hover/focus */
+  border-color: #8a2be2 !important;
+}
+
+/* Optional: card headers with primary color */
+.card-header.bg-primary {
+  background-color: #6f42c1 !important;
+  border-color: #6f42c1 !important;
+}
+
+/* Task badge colors (optional) */
+.badge.bg-success {
+  background-color: #6f42c1 !important; /* if you want done tasks purple instead of green */
+}
+
